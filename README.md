@@ -154,6 +154,7 @@ function makePlayer(){
  document.getElementById("hero").textContent=heroNames[heroIndex];
 }
 function start(n){heroIndex=n;makePlayer();document.getElementById("select").style.display="none";}
+window.start = start;
 
 const pickups=[];
 for(let i=0;i<75;i++){
